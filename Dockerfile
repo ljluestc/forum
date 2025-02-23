@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy dependency files
 COPY requirements.txt .
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install Python and Node.js dependencies
 RUN pip install --no-cache-dir -r requirements.txt && \
